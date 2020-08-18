@@ -12,11 +12,12 @@ public class Demo1 {
 @Test
 public class demo1 {
 	public void run() throws InterruptedException {
-
+System.out.println("this is after commit ");
 System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver83.exe");
 WebDriver driver = new ChromeDriver();
 driver.get("<a href='http://toolsqa.com/automation-practice-switch-windows/'>http://toolsqa.com/automation-practice-switch-windows/</a>");
 WebElement clickElement = driver.findElement(By.id("button1"));
+//driver.findElement(By.cssSelector(" fhwhf" )).isDisplayed()
  
 for(int i = 0; i < 3; i++)
 {
